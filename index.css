@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+
+  --primary: rgb(1, 22, 42);
+  --vice: rgb(229, 153, 12);
+  --text: whitesmoke;
+  --background: rgb(153, 149, 149, 0.25);
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 0 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  filter: drop-shadow(1px 1px 5px var(--primary));
+  height: 70px;
+}
+
+main {
+  background-image: url(images/main-background.avif);
+}
+
+.logo {
+  color: var(--vice);
+  font-size: 24px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.desktop-nav a {
+  color: var(--text);
+  font-size: 1.1rem;
+  transition: all 0.1s ease-in;
+}
+
+.desktop-nav a:hover {
+  border-bottom: 2px solid var(--vice);
+}
+
+.desktop-nav li::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  background: #fff;
+  height: 1px;
+  width: 0%;
+  transition: all 0.1s ease-in;
+}
+
+.desktop-nav li:hover::after {
+  width: 100%;
+}
+
+/* Book list */
+
+#book-list {
+  height: 88vh;
+  margin: -20px 0 0 0;
+  padding: 20px 0 0 0;
+}
+
+#ADD {
+  display: none;
+  margin: -20px 0 0 0;
+  padding: 20px 0 0 0;
+}
+
+section h1 {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 40px;
+  color: var(--vice);
+}
+
+.heading {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.date {
+  align-self: flex-end;
+  margin-right: 10%;
+  color: var(--vice);
+}
+
+.books-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 80%;
+  height: 60vh;
+  margin: 0 auto;
+}
+
+.book {
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background);
+  box-shadow: 1px 1px 2px black;
+  color: var(--text);
+  height: 60px;
+  font-size: 13px;
+}
+
+.add-books {
+  margin: auto;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 70vh;
+}
+
+.add-books input {
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+.add-books button {
+  align-self: flex-end;
+  padding: 4px 2rem;
+  background: green;
+  border: 1px solid black;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.add-books button:active {
+  border: 1px solid grey;
+}
+
+.message-prompt {
+  align-self: center;
+  display: none;
+  padding: 0 10px;
+  box-shadow: 0 0 10px var(--primary);
+}
+
+.error {
+  display: block;
+  color: red;
+  background: beige;
+}
+
+.success {
+  display: block;
+  color: #03c92e;
+  background: beige;
+}
+
+/* Contact */
+
+#contact {
+  display: none;
+  height: 90vh;
+  margin: -20px 0 0 0;
+  padding: 20px 0 0 0;
+}
+
+.contact-me {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-me p {
+  align-self: center;
+  color: var(--text);
+}
+
+.contact-me span {
+  color: var(--text);
+  margin: 20px 0 10px 0;
+}
+
+/* Footer */
+footer {
+  background: var(--primary);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0.2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10% 0 10%;
+  align-items: center;
+  filter: drop-shadow(1px 1px 5px black);
+  color: #fff;
+}
+
+footer .logo {
+  font-size: 1.5rem;
+}
+
+/* Utility */
+
+.disappear {
+  display: none;
+}
