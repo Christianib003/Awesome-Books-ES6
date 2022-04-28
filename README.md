@@ -4,6 +4,9 @@
 
 > In this project, I use ES6 and Javascipt modules to create a bookstore Singe Page App with simple UI.
 
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/91727952/165753254-b3d2b62c-a25e-4c7b-96e0-89525c40ed75.png)
 
 ## Built With
 
@@ -12,10 +15,9 @@
 - JAVASCRIPT
 - VS Code
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
+[Live Demo Link](https://christianib003.github.io/Awesome-Books-ES6/)
 
 ## Getting Started
 
